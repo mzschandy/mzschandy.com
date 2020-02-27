@@ -1,1 +1,3 @@
-# mzschandy.github.io
+# mzschandy.com
+
+Repo for personal website
