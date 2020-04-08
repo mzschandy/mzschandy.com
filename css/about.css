@@ -1,6 +1,9 @@
 .content .description {
   margin: auto 350px;
 }
+.content .description div {
+  padding: 20px;
+}
 
 .hero {
   text-align: center;
