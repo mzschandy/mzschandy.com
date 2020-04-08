@@ -1,43 +1,113 @@
 body {
+  margin: 0 auto;
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #000;
   color: #fff;
-  margin: 0 auto;
 }
 
-.sidenav {
-  height: 100%;
-  width: 0;
+.nav {
+  background-color: #000;
+  color: #fff;
+  display: flex;
+  flex-direction: row;
+  padding: 25px;
+  align-items: center;
+  justify-content: space-between;
+  top: 0;
+  transition: 0.4s;
   position: fixed;
-  z-index: 1;
-  top: 0;
-  left: 0;
-  background-color: #111;
-  overflow-x: hidden;
-  transition: 0.5s;
-  padding-top: 60px;
+  width: 100%;
+  z-index: 99;
+  overflow: hidden;
 }
-.sidenav a {
-  padding: 8px 8px 8px 32px;
+.nav a {
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
-  display: block;
-  transition: 0.3s;
+  color: #fff;
 }
-.sidenav a:hover {
-  color: #f1f1f1;
+
+.nav-links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.sidenav .closebtn {
-  position: absolute;
-  top: 0;
-  right: 25px;
-  font-size: 36px;
-  margin-left: 50px;
+.nav-links .nav-link {
+  margin-right: 20px;
+  margin-left: 20px;
+  padding-bottom: 5px;
+}
+.nav-links .nav-link:hover {
+  border-bottom: 1px solid #fff;
 }
 
 .content {
-  transition: margin-left 0.5s;
-  padding: 16px;
+  margin-top: 150px;
+}
+.content #indexContent {
+  display: flex;
+  align-content: center;
+}
+.content .about {
+  margin-top: 50px;
+  padding: 40px;
+}
+.content .about span {
+  font-size: 3em;
+}
+.content .about h1 {
+  font-size: 6em;
+}
+.content .portfolio-grid {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  grid-gap: 0px;
+}
+.content .portfolio-grid .grid-card {
+  margin: 0;
+  position: relative;
+}
+.content .portfolio-grid .grid-card img {
+  width: 100%;
+}
+.content .portfolio-grid .grid-card .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #E9EDEF;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: 0.5s ease;
+}
+.content .portfolio-grid .grid-card .text {
+  color: #000;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+.content .portfolio-grid .grid-card:hover .overlay {
+  height: 100%;
+}
+
+.footer {
+  display: flex;
+  padding: 40px;
+  background-color: #000;
+  color: #fff;
+  bottom: 0;
+}
+.footer a {
+  text-decoration: none;
+  color: #fff;
+  cursor: pointer;
+}
+.footer .link {
+  margin: 5px;
 }
 
 /*# sourceMappingURL=main.css.map */

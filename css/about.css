@@ -1,0 +1,18 @@
+.content .description {
+  margin: auto 350px;
+}
+
+.hero {
+  text-align: center;
+  border-bottom: 1px solid #C9CACC;
+}
+.hero img {
+  width: 45%;
+}
+
+.blurb {
+  text-align: center;
+  padding: 30px;
+}
+
+/*# sourceMappingURL=about.css.map */

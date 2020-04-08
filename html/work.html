@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Zach S-Lartey | Web Developer</title>
+
+  <link rel="stylesheet" href="../css/main.css">
+  <script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+
+  <style>
+    .nav-link:hover {
+      border-bottom: 1px solid #000;
+      transition: border .2s ease;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="nav" id="navbar">
+    <h4><a href="../index.html" id="brand"><b>ZACH S-LARTEY</b></a></h4>
+
+    <div class="nav-links">
+      <a href="work.html" class="nav-link" style="border-bottom: 1px solid white">Work</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link" style="margin-right: 50px;">Contact</a>
+    </div>
+
+  </div>
+
+  <script>
+    window.onscroll = function() {
+      scrollFunction();
+    }
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
+        document.getElementById("navbar").style.backgroundColor = "#fff";
+        document.getElementById("navbar").style.padding = "5px 20px";
+        document.getElementById("navbar").style.color = "#000";
+        $("#brand").css("color", "#000");
+        $(".nav-link").css("color", "#000");
+      } else {
+        document.getElementById("navbar").style.backgroundColor = "#000";
+        document.getElementById("navbar").style.padding = "25px";
+        document.getElementById("navbar").style.color = "#fff";
+        $("#brand").css("color", "#fff");
+        $(".nav-link").css("color", "#fff");
+      }
+    }
+  </script>
+
+  <div class="content">
+
+    <div class="portfolio-grid">
+      <div class="grid-card" style="background-image: url('../img/dash.png'); background-size: cover">
+        <img src="">
+        <a href="./html/synergy.html">
+          <div class="overlay">
+            <div class="text">
+              <div>Synergy</div>
+              <div style="margin-top: 100px"><b>In Development</b></div>
+            </div>
+
+          </div>
+        </a>
+
+      </div>
+      <div class="grid-card" style="background-image: url('../img/work_preview_greenbean.JPG'); background-size: cover">
+        <img src="../img/work_preview_greenbean.JPG">
+        <div class="overlay">
+          <div class="text">
+            <div>Greenbeen Coffee</div>
+            <div style="margin-top: 100px"><a href="#"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-card" style="background-image: url('../img/work_preview_moody.JPG'); background-size: cover">
+        <img src="../img/work_preview_moody.JPG">
+        <div class="overlay">
+          <div class="text">
+            <div>Moody</div>
+            <div style="margin-top: 100px"><a href="#"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-card" style="background-image: url('../img/work_preview_citybuilder.JPG'); background-size: cover">
+        <img src="../img/work_preview_citybuilder.JPG">
+        <div class="overlay">
+          <div class="text">
+            <div>City Builder Interactive</div>
+            <div style="margin-top: 100px"><a href="#"></a></div>
+          </div>
+        </div>
+      </div>
+      <div class="grid-card" style="background-image: url('../img/work_preview_splitrockstudio.JPG'); background-size: cover">
+        <img src="../img/work_preview_splitrockstudio.JPG">
+        <div class="overlay">
+          <div class="text">
+            <div>Split Rock Studio</div>
+            <div style="margin-top: 100px"><a href="#"></a></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="footer" style="margin-top: 100px">
+    <div class="link">mzschandy@gmail.com</div>
+    <div class="link">-</div>
+    <a href="https://twitter.com/mzschandy" target="_blank" class="link">Twitter</a>
+    <div class="link">-</div>
+    <a href="https://www.linkedin.com/in/zach-schandorf-lartey-34a524178/" class="link" target="_blank">LinkedIn</a>
+    <div class="link">-</div>
+    <a href="https://github.com/mzschandy" target="_blank" class="link">Github</a>
+  </div>
+</body></html>

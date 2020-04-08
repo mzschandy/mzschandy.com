@@ -5,31 +5,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <title>Zach S-Lartey | Web Developer</title>
+  <title>Zach S-Lartey | UI/UX Designer</title>
 
-  <link rel="stylesheet" href="./css/main.css">
-  <script src="https://cdn.jsdelivr.net/npm/typeit@6.1.1/dist/typeit.min.js">
-  </script>
+  <link rel="stylesheet" href="../css/main.css">
+  <link rel="stylesheet" href="../css/contact.css">
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-
-
-  <style>
-    .nav-link:hover {
-      border-bottom: 1px solid #fff;
-      transition: border .2s ease;
-    }
-
-  </style>
 </head>
 
 <body>
   <div class="nav" id="navbar">
-    <h4><a href="index.html" id="brand"><b>ZACH S-LARTEY</b></a></h4>
+    <h4><a href="../index.html" id="brand"><b>ZACH S-LARTEY</b></a></h4>
 
     <div class="nav-links">
-      <a href="./html/work.html" class="nav-link" style="">Work</a>
-      <a href="./html/about.html" class="nav-link">About</a>
-      <a href="./html/contact.html" class="nav-link" style="margin-right: 50px;">Contact</a>
+      <a href="work.html" class="nav-link" style="">Portfolio</a>
+      <a href="about.html" class="nav-link">About</a>
+      <a href="contact.html" class="nav-link" style="margin-right: 50px; border-bottom: 1px solid white">Contact</a>
     </div>
 
   </div>
@@ -54,38 +45,36 @@
         $(".nav-link").css("color", "#fff");
       }
     }
-
   </script>
 
-  <div class="content" id="indexContent">
-    <div class="about">
-      <span>Hi, <br />I'm Zach, <br> a Web Developer.</span>
-      <h1 id="typewriter" style=""></h1>
+  <div class="content">
+    <div class="hero">
+      <img src="../img/Mail-sent.jpg" style="margin-bottom: -4px">
     </div>
 
-    <script>
-      new TypeIt("#typewriter", {
-          loop: true,
-          loopDelay: 2000,
-        }).type("I build websites")
-        .pause(2000)
-        .delete(16, {
-          delay: 1500
-        })
-        .type("I design modern interfaces", {
-          delay: 750
-        })
-        .pause(2000)
-        .delete(26, {
-          delay: 1500
-        })
-        .type("I like to draw").go();
+    <div class="blurb">
+      <h2>Have an idea? Talk to me</h2>
+    </div>
 
-    </script>
+    <div class="wrapper">
+      <form>
+        <div>
+          <label for=""></label>
+          <input type="text" id="" name="name" placeholder="Your name">
+        </div>
+        <div>
+          <label for=""></label>
+          <input type="text" id="" name="email" placeholder="example@email.com">
+        </div>
+        <div>
+          <label for=""></label>
+          <textarea type="" id="" name="subject" placeholder="What's your idea?"></textarea>
+        </div>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
   </div>
 
-
-  <!-- 
   <div class="footer">
     <div class="link">mzschandy@gmail.com</div>
     <div class="link">-</div>
@@ -95,7 +84,4 @@
     <div class="link">-</div>
     <a href="https://github.com/mzschandy" target="_blank" class="link">Github</a>
   </div>
--->
-</body>
-
-</html>
+</body></html>

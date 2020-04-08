@@ -1,0 +1,48 @@
+$accent: #E9EDEF;
+
+.hero {
+  //margin-top: 150px;
+  text-align: center;
+  border-bottom: 1px solid #C9CACC;
+
+  img {
+    width: 30%;
+  }
+}
+
+.blurb {
+  text-align: center;
+  padding: 30px;
+}
+
+.content {
+  .wrapper {
+    margin: 20px 350px;
+  }
+}
+
+
+form {
+  text-align: center;
+}
+
+input[type=text],
+select,
+textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  margin: 10px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  padding: 10px 20px;
+  //text-align: start;
+  background-color: $accent;
+  border: none;
+  cursor: pointer;
+  box-sizing: border-box;
+}
+
