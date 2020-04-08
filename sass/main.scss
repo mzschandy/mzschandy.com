@@ -1,5 +1,7 @@
 $accent: #E9EDEF;
 
+$color: 0E0C0B;
+
 body {
   margin: 0 auto;
   font-family: Arial, Helvetica, sans-serif;
@@ -8,7 +10,7 @@ body {
 }
 
 .nav {
-  background-color: #000;
+  background-color: $color;
   color: #fff;
   display: flex;
   flex-direction: row;
@@ -119,7 +121,7 @@ body {
 .footer {
   display: flex;
   padding: 40px;
-  background-color: #000;
+  background-color: $color;
   color: #fff;
   bottom: 0;
 
