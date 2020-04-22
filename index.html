@@ -21,10 +21,18 @@
       transition: border .2s ease;
     }
 
+    body,
+    html {
+      height: 100%;
+    }
   </style>
 </head>
 
 <body>
+  <div class="imageContainer">
+    <!-- <img src="./img/zachhead.io.png"> -->
+  </div>
+
   <div class="nav" id="navbar">
     <h4><a href="index.html" id="brand"><b>ZACH S-LARTEY</b></a></h4>
 
@@ -56,14 +64,15 @@
         $(".nav-link").css("color", "#fff");
       }
     }
-
   </script>
 
-  <div class="content" id="indexContent">
+  <div class="content" id="indexContent" style="margin-top: -500px">
     <div class="about">
       <span>Hi, <br />I'm Zach, <br> a Web Developer.</span>
       <h1 id="typewriter" style=""></h1>
     </div>
+
+
 
     <script>
       new TypeIt("#typewriter", {
@@ -71,7 +80,7 @@
           loopDelay: 2000,
         }).type("I build cool websites")
         .pause(2000)
-        .delete(16, {
+        .delete(22, {
           delay: 1500
         })
         .type("I design modern interfaces", {
@@ -82,7 +91,6 @@
           delay: 1500
         })
         .type("I draw in my freetime").go();
-
     </script>
   </div>
 
@@ -98,6 +106,4 @@
     <a href="https://github.com/mzschandy" target="_blank" class="link">Github</a>
   </div>
 -->
-</body>
-
-</html>
+</body></html>

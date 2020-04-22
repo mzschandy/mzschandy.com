@@ -51,10 +51,10 @@ body {
   padding: 40px;
 }
 .content .about span {
-  font-size: 3em;
+  font-size: 2em;
 }
 .content .about h1 {
-  font-size: 6em;
+  font-size: 3em;
 }
 .content .portfolio-grid {
   display: grid;
@@ -108,6 +108,14 @@ body {
 }
 .footer .link {
   margin: 5px;
+}
+
+.imageContainer {
+  background-image: url("../img/zachhead.io.png");
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 /*# sourceMappingURL=main.css.map */
